@@ -1,0 +1,56 @@
+*{
+    justify-items: center;
+    padding: 5px;
+    
+}
+
+body{
+    padding: 15px;
+    margin: 0;
+    background: blanchedalmond;
+    justify-items: center;
+    align-items: center;
+    font-family:monospace ;
+    
+}
+.card{
+    background: #111520;
+    border-radius: 36px;
+    display: inline-block;
+    align-items: center;
+    width: 400px;
+    height:650px;
+    margin-bottom: 100px;
+    box-shadow: 0 12px 13px rgb(44, 42, 42), 0 12px 13px rgb(241, 240, 240);   
+    position: relative;
+}    
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: blue;
+    
+}
+.image{
+    justify-items: center;
+    position: relative;
+    border-radius: 100%;
+    margin-top: 60px;
+    width: 230px;
+    height: 230px;
+    inset: 0;
+}   
+.name{
+    color: aliceblue;
+    font-size: 27px;    
+}
+.note{
+    color: aliceblue;
+}
+.icon{
+    color: aliceblue;
+}

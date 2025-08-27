@@ -1,0 +1,187 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+     }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 99vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .id-container {
+            caption-side: right;
+            background: rgb(236, 232, 232);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(8, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .id-card {
+            width: 350px;
+            height: 200px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            border-radius: 12px;
+            position: relative;
+            float: right;
+            overflow: hidden;
+            margin: 0 auto 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .id-header {/*high school*/
+            background: rgba(230, 228, 228, 0.1);
+            padding: 8px 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .school-name {/**/
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .school-subtitle {/*sec title*/
+            color: rgba(255,255,255,0.8);
+            font-size: 10px;
+        }
+
+        .id-content {
+            display: flex;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        .photo-section {
+            flex-shrink: 0;
+        }
+
+        .student-photo {
+            width: 60px;
+            height: 75px;
+            background: #f0f0f0;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #666;
+            border: 2px solid white;
+        }
+
+        .info-section {/*form*/
+            flex: 1;
+            color: white;
+        }
+
+        .student-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .student-details {
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        .detail-row {
+            margin-bottom: 3px;
+        }
+
+        .id-number {
+            position: absolute;
+            bottom: 8px;
+            right: 15px;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .form-section {
+            background: #f8f9fa;
+            padding: 20px;
+            float: left;
+            border-radius: 10px;
+            width: 370px;
+            margin-bottom: 20px;
+        }
+
+        .form-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #6b6666;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #25282b;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .generate-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .generate-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .barcode {
+            position: absolute;
+            bottom: 5px;
+            left: 15px;
+            width: 80px;
+            height: 12px;
+            background: repeating-linear-gradient(
+                90deg,
+                white 0px,
+                white 1px,
+                transparent 1px,
+                transparent 3px
+            );
+            opacity: 0.7;
+        }
