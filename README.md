@@ -1,2 +1,2 @@
-# wed-projercr
+# wed-project
 wed project view
